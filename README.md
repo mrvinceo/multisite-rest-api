@@ -99,3 +99,11 @@ We suggest using JWT through something like [simple-jwt-login](https://wordpress
 `curl -X PATCH /wp-json/wp/v2/sites/assign\?blog_id\=13 -H "Authorization: JWT_TOKEN"`  
 `curl -X PATCH /wp-json/wp/v2/sites/assign\?user_id=3&\?blog_id\=13 -H "Authorization: JWT_TOKEN"`  
 
+### Clone Site ###
+- **Endpoint:** /wp/v2/sites/clone
+- **Method:** POST
+**ARGS:** ["domain", "source", "title"] (source being the source site to clone from.)
+- **Examples:**  
+`curl -X POST /wp-json/wp/v2/sites/clonedomain=mynewlyclonedsite&source=5&title=MyAwesomeNewSite -H "Authorization: JWT_TOKEN"`
+
+"
